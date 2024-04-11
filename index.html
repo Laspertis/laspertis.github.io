@@ -2,44 +2,69 @@
 <html>
 <head>
     <style>
-        .item1 { grid-area: header; }
+        body {
+            align-items: center;
+            text-align: center;
+            background-color: #E6E6FA;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+        /*.item1 { grid-area: header; }*/
         .item2 { grid-area: menu; }
-        .item3 { grid-area: main; }
+        .item3 { grid-area: main; width: 200px;}
         .item4 { grid-area: right; }
         .item5 { grid-area: footer; }
 
         .grid-container {
             display: grid;
             grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
+    'menu main main main main main'
     'menu footer footer footer footer footer';
             grid-gap: 10px;
-            background-color: #2196F3;
+            background-color: #6A5ACD;
             padding: 10px;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-bottom: 20%;
         }
 
         .grid-container > div {
             background-color: rgba(255, 255, 255, 0.8);
             text-align: center;
             padding: 20px 0;
-            font-size: 30px;
+            font-size: 15px;
+        }
+        .item5, .item3 > a,p {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 15px;
+            color: 	#BA55D3;
+        }
+        .item5,.item3 > a:hover {
+            color: 	#DDA0DD;
+        }
+        .item3 > div {
+            font-size: 15px;
         }
     </style>
 </head>
 <body>
 
-<h1>Grid Layout</h1>
+<h1>Melania Conte</h1>
 
-<p>This grid layout contains six columns and three rows:</p>
-
-<div class="grid-container">
-    <div class="item1">Header</div>
-    <div class="item2">Menu</div>
-    <div class="item3">Main</div>
-    <div class="item4">Right</div>
-    <div class="item5">Footer</div>
+<p>Junior Dev ONIVERSE Group</p>
+<div>
+    <div class="grid-container">
+        <!--<div class="item1">Header</div>-->
+        <div class="item2"><img src = "https://thumbs.dreamstime.com/b/cat-looking-paper-side-torn-hole-isolated-up-53216635.jpg" width="60%" style="border-radius: 100%;"></div>
+        <div class="item3" style="font-size: 10px;"><p><b>About me</b></p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <!--<div class="item4">Right</div>-->
+        <div class="item5">
+            <p><b>Profili Social</b></p>
+            <a href="">Instagram</a><br>
+            <a href="">Facebook</a><br>
+            <a href="">Linkedin</a><br>
+        </div>
+    </div>
 </div>
-
 </body>
 </html>
